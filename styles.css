@@ -1,0 +1,166 @@
+body {
+    background: gray;
+    color: black;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER  */
+
+header {
+    background-color: black;
+    background-image: url("images/hero.jpeg");
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .logo a{
+    background-image: url("images/voidstate.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -45px;
+    width: 300px;
+
+}
+
+header h1{
+    color: white;
+    font-size: 200px;
+    position: relative;
+    top: -70px;
+}
+
+header .mobile {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a:hover {
+    color: darkgray;
+}
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 735px) {
+    header {
+        height: 250px;
+        background-position: 0 -15px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 200px;
+        background-position: 0 20px;
+    }
+}
+/* FEATURES */
+
+.feature-box {
+    display: flex;
+    color: black;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feature-box figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.feature-box.sales figure img {
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: black 0 0 10px;
+    width: 180px;
+}
+
+button {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+
+}
+
+.temp-info {
+    margin-left: 20px;
+}
+
+.feature-box.products {
+    display: inline-block;
+}
+
+.feature-box.products figcaption {
+    margin: 10px;
+    text-align: left;
+}
+
+.feature-box.products figure {
+    width: 400px;
+}
+
+.feature-box.products figure img {
+    width: 360px;
+}
+
+.feature-box.socials figure img {
+    width: 180px;
+}
+
+.redirect {
+    margin: 20px;
+}
+
+.redirect a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: grey;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
